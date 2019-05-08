@@ -2,22 +2,20 @@
     <div class="container">
         <div id="app" class="box row">
             <character></character>
-            <div class=" four columns my-2">
-                <stats :character="user.characters[2]"></stats>
-                <equips></equips>
+            <div class="four columns my-2">
+                <stats :character="user.characters[1]"></stats>
+                <equips :equips="user.characters[1].Equips"></equips>
             </div>
-            <characterList :list="user.characters" ></characterList>
+            <characterList :list="user.characters"></characterList>
         </div>
     </div>
 </template>
 
 <script>
-
     import characterList from './components/character-list.vue';
     import character from './components/character.vue';
     import stats from './components/stats.vue';
     import equips from './components/equips.vue';
-
 
     export default {
         name: 'app',
@@ -30,17 +28,17 @@
         data() {
             return {
                 title: 'Home',
-                user: {
+                "user": {
                     "userId": "2876349875623",
                     "username": "calvin",
                     "characters": [
                         {
                             "id": "7846",
                             "name": {
-                                first: 'Reimu',
-                                last: 'Hakurei',
-                                other: '',
-                                nick: 'miko'
+                                "first": 'Reimu',
+                                "last": 'Hakurei',
+                                "other": '',
+                                "nick": 'miko'
                             },
                             "lv": {
                                 "current": "3",
@@ -59,16 +57,24 @@
                                 "acc": "7",
                                 "dodge": "3"
                             },
-                            "Spellcards": [null, null],
-                            "Weapon": "4"
+                            "Equips": {
+                                "Spellcards": [null, null],
+                                "Weapon": "4",
+                                "Head": "Ribbon",
+                                "Body": "Sleeveless Shirt",
+                                "Legs": "Red Skirt",
+                                "Neck": "Ribbon-Bow",
+                                "Arms": "Detached Sleeves",
+                                "Hands": "None"
+                            }
                         },
                         {
                             "id": "47836",
                             "name": {
-                                first: 'Marisa',
-                                last: 'Kirisame',
-                                other: '',
-                                nick: 'marichan'
+                                "first": 'Marisa',
+                                "last": 'Kirisame',
+                                "other": '',
+                                "nick": 'marichan'
                             },
                             "lv": {
                                 "current": "3",
@@ -87,8 +93,17 @@
                                 "acc": "7",
                                 "dodge": "3"
                             },
-                            "Spellcards": ["2", "5"],
-                            "Weapon": "8"
+
+                            "Equips": {
+                                "Spellcards": ["2", "5"],
+                                "Weapon": "8",
+                                "Head": "Witch Hat",
+                                "Body": "Black Maid Dress with Apron",
+                                "Legs": "Black Maid Dress with Apron",
+                                "Neck": "None",
+                                "Arms": "None",
+                                "Hands": "Broom"
+                            }
                         }
                     ],
                     "Inventory": {

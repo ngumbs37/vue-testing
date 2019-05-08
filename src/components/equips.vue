@@ -2,38 +2,38 @@
     <div class="box equips">
         <h6 class="h5">Equips</h6>
         <div class="box">
-            <div class="row">
+            <div class="row equips-row">
                 <div class="offset-by-two three columns">
                     <div class="box eq-box">
-                        head
+                        {{ equips.Head }}
                     </div>
                     <div class="box eq-box">
-                        body
+                        {{ equips.Body }}
                     </div>
                     <div class="box eq-box">
-                        Legs
-                    </div>
-                </div>
-                <div class="three columns">
-                    <div class="box eq-box">
-                        necklace
-                    </div>
-                    <div class="box eq-box">
-                        arms
-                    </div>
-                    <div class="box eq-box">
-                        hands
+                        {{ equips.Legs }}
                     </div>
                 </div>
                 <div class="three columns">
                     <div class="box eq-box">
-                        weapon
+                        {{ equips.Neck }}
                     </div>
                     <div class="box eq-box">
-                        spellcard-1
+                        {{ equips.Arms }}
                     </div>
                     <div class="box eq-box">
-                        spellcard-2
+                        {{ equips.Hands }}
+                    </div>
+                </div>
+                <div class="three columns">
+                    <div class="box eq-box">
+                        {{ equips.Weapon }}
+                    </div>
+                    <div class="box eq-box">
+                        {{ equips.Spellcards[0] }}
+                    </div>
+                    <div class="box eq-box">
+                        {{ equips.Spellcards[1] }}
                     </div>
                 </div>
             </div>
@@ -44,7 +44,13 @@
 
 <script>
     export default {
-        name: "equip-item"
+        name: "equip-item",
+        props: {
+            "equips": {
+                type: Object,
+                required: true
+            }
+        }
     }
 </script>
 

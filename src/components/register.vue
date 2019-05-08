@@ -4,9 +4,9 @@
         <form @submit="validateForm" action="https://vuejs.org/" method="post">
             <div v-if="errors.length">
                 <strong>Please correct the following error(s):</strong>
-            <ul>
-                <li :key="error" v-for="error in errors">{{  }}</li>
-            </ul>
+                <ul>
+                    <li :key="error" v-for="error in errors">{{ }}</li>
+                </ul>
             </div>
             <label for="email">Email</label>
             <input v-model="email" type="text" id="email" name="email">
@@ -20,7 +20,7 @@
             <label for="passwordC">Confirm Password</label>
             <input v-model="passwordC" type="text" id="passwordC" name="passwordC">
             <br>
-                <input type="submit" value="Submit" @submit="validateForm">
+            <input type="submit" value="Submit" @submit="validateForm">
         </form>
     </div>
 </template>
@@ -38,7 +38,7 @@
             }
         },
         methods: {
-            validateForm: function(e) {
+            validateForm: function (e) {
                 const d = /^(([^<>()\\[\\]\\\\.,;:\\s@"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\0-9]+\\.)+[a-zA-Z]{2,}))$/;
                 if (this.email && this.username && this.password && this.passwordC) {
                     return true
