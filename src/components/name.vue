@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <span v-if="name.other !== ''"
               class="one-half column">{{ name.last + ' ' + name.other + ' ' + name.first }}
             <span v-if="name.nick !== ''"> ({{ name.nick }})</span></span>
@@ -11,16 +11,7 @@
 <script>
     export default {
         name: "name",
-        props: {
-            name: {
-                type: Object,
-                required: true,
-                validator(value) {
-                    return typeof value.first === "string" && typeof value.last === "string"
-                      && typeof value.other === "string" && typeof value.nick === "string"
-                }
-            }
-        }
+        props: ["name","index"]
     }
 </script>
 

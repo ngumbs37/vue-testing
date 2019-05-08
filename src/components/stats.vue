@@ -9,7 +9,7 @@
             <div class="row">
                 <p class="one-half column">Hp: {{character.stats.hp}}</p>
                 <p class="one-half column">Stam:
-                    {{character.stats.stamina.current}}/{{character.stats.stamina.max()}} <span>(00:00)</span></p>
+                    {{character.stats.stamina.current}} / {{character.stats.stamina.max()}} <span>(00:00)</span></p>
             </div>
             <div class="row">
                 <p class="one-half column">Atk: {{character.stats.atk}}</p>
