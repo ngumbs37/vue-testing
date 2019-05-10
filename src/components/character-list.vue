@@ -4,6 +4,7 @@
         <div class="box h-100">
             <div class="box ten columns offset-by-one mt-1" v-for="(character, index) in list" :key="character.id" v-on:click="test(index)">
                 <characterName :name="character.name"></characterName>
+                <span>{{character.species}}</span>
             </div>
         </div>
     </div>
