@@ -1,0 +1,156 @@
+{
+  "userId": "123456789",
+  "username": "name",
+  "characters": [
+    {
+      "id": "500",
+      "name": {
+        "first": "Reimu",
+        "last": "Hakurei",
+        "other": "",
+        "nick": ""
+      },
+      "lv": {
+        "current": "1",
+        "max": "30"
+      },
+      "stats": {
+        "hp": "50",
+        "stamina": {
+          "current": "5",
+          "max": "15"
+        },
+        "atk": "15",
+        "def": "5",
+        "crit": "5",
+        "critDmg": "120",
+        "acc": "30",
+        "dodge": "20"
+      },
+      "equips": {
+        "spellcards": [
+          {},
+          {}
+        ],
+        "weapon": {},
+        "head": {},
+        "body": {},
+        "legs": {},
+        "neck": {},
+        "arms": {}
+      }
+    }
+  ],
+  "inventory": {
+    "items": [
+      {
+        "name": "potion",
+        "id": "1",
+        "amount": "4"
+      }
+    ],
+    "equips": {
+      "spellcards": [
+        {
+          "name": "Love-Sign: Master-Spark",
+          "id": "2",
+          "ownerId": "2",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        }
+      ],
+      "weapons": [
+        {
+          "name": "Miko Amulet",
+          "id": "4",
+          "ownerId": "500",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        }
+      ],
+      "head": [
+        {
+          "id": "43",
+          "name": "Ribbon",
+          "ownerId": "500",
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        }
+      ],
+      "body": [
+        {
+          "id": "65",
+          "name": "Sleeveless Shirt",
+          "ownerId": "500",
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "59",
+          "name": "Red Skirt",
+          "ownerId": "500",
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        }
+      ],
+      "arms": [
+        {
+          "id": "53",
+          "name": "Detached Sleeves",
+          "ownerId": "500",
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Money": [
+    "0",
+    "0",
+    "0"
+  ]
+}
