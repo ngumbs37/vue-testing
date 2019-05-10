@@ -10,19 +10,15 @@
                     <div class="box eq-box">
                         {{ equips.Body }}
                     </div>
-                    <div class="box eq-box">
-                        {{ equips.Legs }}
-                    </div>
+
                 </div>
                 <div class="three columns">
-                    <div class="box eq-box">
-                        {{ equips.Neck }}
-                    </div>
+
                     <div class="box eq-box">
                         {{ equips.Arms }}
                     </div>
                     <div class="box eq-box">
-                        {{ equips.Hands }}
+                        {{ equips.Legs }}
                     </div>
                 </div>
                 <div class="three columns">
