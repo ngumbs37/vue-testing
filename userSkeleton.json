@@ -10,6 +10,85 @@
         "other": "",
         "nick": ""
       },
+      "class": "Miko",
+      "lv": {
+        "current": "1",
+        "max": "30"
+      },
+      "stats": {
+        "hp": "50",
+        "stamina": {
+          "current": "5",
+          "max": "15"
+        },
+        "atk": "15",
+        "def": "5",
+        "crit": "5",
+        "critDmg": "120",
+        "acc": "30",
+        "dodge": "20"
+      },
+      "equips": {
+        "spellcards": [
+          {},
+          {}
+        ],
+        "weapon": {},
+        "head": {},
+        "body": {},
+        "legs": {},
+        "neck": {},
+        "arms": {}
+      }
+    },
+    {
+      "id": "501",
+      "name": {
+        "first": "Marisa",
+        "last": "Kirisame",
+        "other": "",
+        "nick": ""
+      },
+      "class": "Magician",
+      "lv": {
+        "current": "1",
+        "max": "30"
+      },
+      "stats": {
+        "hp": "50",
+        "stamina": {
+          "current": "5",
+          "max": "15"
+        },
+        "atk": "15",
+        "def": "5",
+        "crit": "5",
+        "critDmg": "120",
+        "acc": "30",
+        "dodge": "20"
+      },
+      "equips": {
+        "spellcards": [
+          {},
+          {}
+        ],
+        "weapon": {},
+        "head": {},
+        "body": {},
+        "legs": {},
+        "neck": {},
+        "arms": {}
+      }
+    },
+    {
+      "id": "502",
+      "name": {
+        "first": "Sakuya",
+        "last": "Izayoi",
+        "other": "",
+        "nick": ""
+      },
+      "class": "Servant",
       "lv": {
         "current": "1",
         "max": "30"
@@ -44,17 +123,191 @@
   "inventory": {
     "items": [
       {
-        "name": "potion",
+        "name": "HP Potion",
         "id": "1",
         "amount": "4"
+      },
+      {
+        "name": "Stamina Potion",
+        "id": "2",
+        "amount": "3"
+      },
+      {
+        "name": "Exp Bottle 1",
+        "id": "40",
+        "amount": "2"
+      },
+      {
+        "name": "Exp Bottle 2",
+        "id": "41",
+        "amount": "7"
+      },
+      {
+        "name": "Exp Bottle 3",
+        "id": "42",
+        "amount": "1"
       }
     ],
     "equips": {
       "spellcards": [
         {
+          "name": "Spirit Sign: Fantasy Seal -Spread-",
+          "id": "80",
+          "ownerId": "500",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Spirit Sign: Fantasy Seal -Concentrate-",
+          "id": "81",
+          "ownerId": "500",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Dream Sign: Evil-Sealing Circle",
+          "id": "82",
+          "ownerId": "500",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Dream Sign: Duplex Barrier",
+          "id": "83",
+          "ownerId": "500",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Love-Sign: Non-Directional Laser",
+          "id": "90",
+          "ownerId": "501",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
           "name": "Love-Sign: Master-Spark",
-          "id": "2",
-          "ownerId": "2",
+          "id": "93",
+          "ownerId": "501",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Magic Sign: Stardust Reverie",
+          "id": "92",
+          "ownerId": "501",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Magic Sign: Milky Way",
+          "id": "93",
+          "ownerId": "501",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Illusion-Sign: Indiscriminate",
+          "id": "100",
+          "ownerId": "502",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Illusion-Sign: Killing Doll",
+          "id": "101",
+          "ownerId": "502",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Time-Sign: Perfect Square",
+          "id": "102",
+          "ownerId": "502",
+          "s-stats" : {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "name": "Time-Sign: Private Square",
+          "id": "103",
+          "ownerId": "502",
           "s-stats" : {
             "hp": "1",
             "atk": "1",
@@ -68,9 +321,144 @@
       ],
       "weapons": [
         {
-          "name": "Miko Amulet",
-          "id": "4",
+          "id": "1000",
+          "name": "Gohei",
+          "ownerId": null,
+          "class": "Miko",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1001",
+          "name": "Reimu's Gohei",
           "ownerId": "500",
+          "class": "Miko",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1002",
+          "name": "Sanae's Gohei",
+          "ownerId": "504",
+          "class": "Miko",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1010",
+          "name": "Hakkero",
+          "ownerId": null,
+          "class": "Magician",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },{
+          "id": "1011",
+          "name": "Mini-Hakkero",
+          "ownerId": "501",
+          "class": "Magician",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1012",
+          "name": "The Grimoire of Alice",
+          "ownerId": "506",
+          "class": "Magician",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1020",
+          "name": "Dagger",
+          "ownerId": "500",
+          "class":"Servant",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1021",
+          "name": "Steel Sword",
+          "ownerId": null,
+          "class":"Servant",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1022",
+          "name": "Sakuya's Knife and Watch",
+          "ownerId": "500",
+          "class":"Servant",
+          "w-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "1023",
+          "name": "Roukanken and Hakurouken",
+          "ownerId": "507",
+          "class":"Servant",
           "w-stats": {
             "hp": "1",
             "atk": "1",
@@ -82,11 +470,12 @@
           }
         }
       ],
-      "head": [
+      "gear": [
         {
-          "id": "43",
-          "name": "Ribbon",
+          "id": "300",
+          "name": "Reimu's Ribbon",
           "ownerId": "500",
+          "type" : ["0"],
           "e-stats": {
             "hp": "1",
             "atk": "1",
@@ -96,13 +485,42 @@
             "acc": "1",
             "dodge": "1"
           }
-        }
-      ],
-      "body": [
+        },
         {
-          "id": "65",
+          "id": "301",
+          "name": "Witch Hat",
+          "ownerId": "501",
+          "type" : ["0"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "302",
+          "name": "Maid Headdress",
+          "ownerId": "502",
+          "type" : ["0"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "303",
           "name": "Sleeveless Shirt",
-          "ownerId": "500",
+          "ownerId": null,
+          "type" : ["1"],
           "e-stats": {
             "hp": "1",
             "atk": "1",
@@ -112,13 +530,57 @@
             "acc": "1",
             "dodge": "1"
           }
-        }
-      ],
-      "legs": [
+        },
         {
-          "id": "59",
+          "id": "313",
+          "name": "Sleeveless Red Shirt",
+          "ownerId": "500",
+          "type" : ["1"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "304",
+          "name": "Black Maid Dress with Apron",
+          "ownerId": "501",
+          "type" : ["1","2"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "305",
+          "name": "Maid Dress with Apron",
+          "ownerId": "502",
+          "type" : ["1","2"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "306",
           "name": "Red Skirt",
           "ownerId": "500",
+          "type" : ["2"],
           "e-stats": {
             "hp": "1",
             "atk": "1",
@@ -128,13 +590,72 @@
             "acc": "1",
             "dodge": "1"
           }
-        }
-      ],
-      "arms": [
+        },
         {
-          "id": "53",
-          "name": "Detached Sleeves",
+          "id": "307",
+          "name": "Mokou Pants",
+          "ownerId": "509",
+          "type" : ["2"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "309",
+          "name": " White Detached Sleeves",
           "ownerId": "500",
+          "type" : ["3"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "310",
+          "name": " White and Blue Detached Sleeves",
+          "ownerId": "504",
+          "type" : ["3"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "311",
+          "name": "Green Skirt",
+          "ownerId": "504",
+          "type" : ["2"],
+          "e-stats": {
+            "hp": "1",
+            "atk": "1",
+            "def": "1",
+            "crit": "1",
+            "critDmg": "1",
+            "acc": "1",
+            "dodge": "1"
+          }
+        },
+        {
+          "id": "312",
+          "name": "Broom",
+          "ownerId": "501",
+          "type" : ["3"],
           "e-stats": {
             "hp": "1",
             "atk": "1",
@@ -148,9 +669,15 @@
       ]
     }
   },
-  "Money": [
-    "0",
-    "0",
-    "0"
+  "Currencies": [
+    {
+      "Yen": "0"
+    },
+    {
+      "Gold": "0"
+    },
+    {
+      "Tickets": "0"
+    }
   ]
 }
