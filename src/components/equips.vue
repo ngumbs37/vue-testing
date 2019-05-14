@@ -5,31 +5,30 @@
             <div class="row equips-row">
                 <div class="offset-by-two three columns">
                     <div class="box eq-box">
-                        {{ equips.Head }}
+                        {{ display('head') }}
                     </div>
                     <div class="box eq-box">
-                        {{ equips.Body }}
+                        {{ display('body') }}
                     </div>
 
                 </div>
                 <div class="three columns">
-
                     <div class="box eq-box">
-                        {{ equips.Arms }}
+                        {{ display('arms') }}
                     </div>
                     <div class="box eq-box">
-                        {{ equips.Legs }}
+                        {{ display('legs') }}
                     </div>
                 </div>
                 <div class="three columns">
                     <div class="box eq-box">
-                        {{ equips.Weapon }}
+                        {{ display('weapon') }}
                     </div>
                     <div class="box eq-box">
-                        {{ equips.Spellcards[0] }}
+                        {{ display('spellcard0') }}
                     </div>
                     <div class="box eq-box">
-                        {{ equips.Spellcards[1] }}
+                        {{ display('spellcard1') }}
                     </div>
                 </div>
             </div>
@@ -45,6 +44,26 @@
             "equips": {
                 type: Object,
                 required: true
+            }
+        },
+        methods: {
+            display(equipName) {
+                switch(equipName){
+                    case 'spellcard0':
+                        return this.itemOrNone(this.equips.spellcards[0]);
+
+                    case 'spellcard1':
+                        return this.itemOrNone(this.equips.spellcards[1]);
+
+                    default :
+                        return this.itemOrNone(this.equips[equipName]);
+
+                }
+            },
+            itemOrNone(item){
+                if(!item.id) 
+                    return "None";
+                return item;
             }
         }
     }

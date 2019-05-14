@@ -11,6 +11,7 @@
         "nick": ""
       },
       "class": "Miko",
+      "species": "Human",
       "lv": {
         "current": "1",
         "max": "30"
@@ -50,6 +51,7 @@
         "nick": ""
       },
       "class": "Magician",
+      "species": "Human",
       "lv": {
         "current": "1",
         "max": "30"
@@ -89,6 +91,7 @@
         "nick": ""
       },
       "class": "Servant",
+      "species": "Human",
       "lv": {
         "current": "1",
         "max": "30"
@@ -323,7 +326,7 @@
         {
           "id": "1000",
           "name": "Gohei",
-          "ownerId": null,
+          "ownerId": "none",
           "class": "Miko",
           "w-stats": {
             "hp": "1",
@@ -368,7 +371,7 @@
         {
           "id": "1010",
           "name": "Hakkero",
-          "ownerId": null,
+          "ownerId": "none",
           "class": "Magician",
           "w-stats": {
             "hp": "1",
@@ -427,7 +430,7 @@
         {
           "id": "1021",
           "name": "Steel Sword",
-          "ownerId": null,
+          "ownerId": "none",
           "class":"Servant",
           "w-stats": {
             "hp": "1",
@@ -519,7 +522,7 @@
         {
           "id": "303",
           "name": "Sleeveless Shirt",
-          "ownerId": null,
+          "ownerId": "none",
           "type" : ["1"],
           "e-stats": {
             "hp": "1",

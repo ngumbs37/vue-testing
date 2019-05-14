@@ -6,7 +6,7 @@
                 <stats :character="giveCharacter"></stats>
                 <equips :equips="giveEquips"></equips>
             </div>
-            <characterList :list="user.characters" v-on:update-eq="characterChangeEq"></characterList>
+            <characterList :list="user.characters" v-on:update-eq="characterChange"></characterList>
         </div>
     </div>
 </template>
@@ -16,8 +16,9 @@
     import character from './components/character.vue';
     import stats from './components/stats.vue';
     import equips from './components/equips.vue';
-
-    const user = {
+    import user from '../userSkeleton.json';
+    // eslint-disable-next-line
+    const dummyUser = {
         "userId": "2876349875623",
         "username": "calvin",
         "characters": [
@@ -131,7 +132,7 @@
             },
             {
                 "id": "2",
-                "lastName": "",
+                "lastName": null,
                 "firstName": "Cirno",
                 "species": "Fairy",
                 "spellCards": ["Ice Sign \"Icicle Fall\"", "Hail Sign \"Hailstorm\"", "Freeze Sign \"Perfect Freeze\"", "Snow Sign \"Diamond Blizzard\"", "Frost Sign \"Frost Columns\"", "Icicle Attack", "Freeze Sign \"Cold Divinity\"", "Freeze Sign \"Minus K\"", "Ice Sign \"Icicle Machine Gun\"", "Ice Sign \"Fairy Spin\"", "Ice Cubes \"Cold Sprinkler\"", "Cold Body \"Super Ice Kick\"", "Ice Sign \"Sword Freezer\"", "Frozen Sign \"Freeze Atmosphere\"", "Cold Sign \"Insta-Freeze Beam\"", "Blowing Ice \"Ice Tornado\"", "Ice Cube \"Great Crusher\"", "Ice Sign \"Ultimate Blizzard\"", "Ice Sign \"Perfect Glacialist\"", "Ice King \"Frost King\""]
@@ -262,13 +263,13 @@
                 title: 'Home',
                 user: user,
                 giveCharacter: user.characters[0],
-                giveEquips: user.characters[0].Equips
+                giveEquips: user.characters[0].equips
             };
         },
         methods: {
 
-            characterChangeEq(event) {
-                this.giveEquips = this.user.characters[event].Equips;
+            characterChange(event) {
+                this.giveEquips = this.user.characters[event].equips;
                 this.giveCharacter = this.user.characters[event];
             }
         }

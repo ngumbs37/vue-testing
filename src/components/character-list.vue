@@ -2,7 +2,7 @@
     <div class="box four columns h-25 my-2">
         <h6 class="h5">Character List</h6>
         <div class="box h-100">
-            <div class="box ten columns offset-by-one mt-1" v-for="(character, index) in list" :key="character.id" v-on:click="test(index)">
+            <div class="box ten columns offset-by-one mt-1" v-for="(character, index) in list" :key="character.id" v-on:click="changeCharacterInfo(index)">
                 <characterName :name="character.name"></characterName>
                 <span>{{character.species}}</span>
             </div>
@@ -25,8 +25,7 @@
         },
         name: "character-list",
         methods: {
-            test(event) {
-                console.log("child");
+            changeCharacterInfo(event) {
                 this.$emit("update-eq", event)
             }
         }
