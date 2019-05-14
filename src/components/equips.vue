@@ -10,7 +10,6 @@
                     <div class="box eq-box">
                         {{ display('body') }}
                     </div>
-
                 </div>
                 <div class="three columns">
                     <div class="box eq-box">
@@ -32,7 +31,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
@@ -57,7 +55,6 @@
 
                     default :
                         return this.itemOrNone(this.equips[equipName]);
-
                 }
             },
             itemOrNone(item){

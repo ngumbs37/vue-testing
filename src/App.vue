@@ -8,6 +8,7 @@
             </div>
             <characterList :list="user.characters" v-on:update-eq="characterChange"></characterList>
         </div>
+            <inventory :inventory="user.inventory.equips" :character="giveCharacter"></inventory>
     </div>
 </template>
 
@@ -16,7 +17,9 @@
     import character from './components/character.vue';
     import stats from './components/stats.vue';
     import equips from './components/equips.vue';
+    import inventory from './components/equip-menu.vue'
     import user from '../userSkeleton.json';
+
     // eslint-disable-next-line
     const dummyUser = {
         "userId": "2876349875623",
@@ -256,7 +259,8 @@
             stats,
             characterList,
             character,
-            equips
+            equips,
+            inventory
         },
         data() {
             return {
@@ -267,7 +271,6 @@
             };
         },
         methods: {
-
             characterChange(event) {
                 this.giveEquips = this.user.characters[event].equips;
                 this.giveCharacter = this.user.characters[event];
