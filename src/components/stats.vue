@@ -8,7 +8,7 @@
             </div>
             <div class="row">
                 <p class="one-half column">Hp: {{ getStat('hp') }}</p>
-                <p class="one-half column">Stam: {{ getStam() }} <span>(00:00)</span></p>
+                <p class="one-half column">Stam: {{ getStam() }} <sup>(00:00)</sup></p>
             </div>
             <div class="row">
                 <p class="one-half column">Atk: {{ getStat('atk') }}</p>
@@ -67,5 +67,7 @@
 </script>
 
 <style scoped>
-
+sup {
+ font-size: 0.75em;
+}
 </style>

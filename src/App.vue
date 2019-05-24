@@ -1,14 +1,16 @@
 <template>
-    <div class="container">
-        <div id="app" class="box row">
-            <character></character>
-            <div class="four columns my-2">
-                <stats :character="giveCharacter"></stats>
-                <equips :equips="giveEquips"></equips>
+    <div>
+        <div class="container">
+            <div id="app" class="box row">
+                <character :characterName="giveCharacter.name"></character>
+                <div class="four columns my-2">
+                    <stats :character="giveCharacter"></stats>
+                    <equips :equips="giveEquips" @equip-menu="getType"></equips>
+                </div>
+                <characterList :list="user.characters" v-on:update-eq="characterChange"></characterList>
             </div>
-            <characterList :list="user.characters" v-on:update-eq="characterChange"></characterList>
         </div>
-            <inventory :inventory="user.inventory.equips" :character="giveCharacter"></inventory>
+        <inventory :inventory="equipType" :character="giveCharacter" :eqType="gearType"></inventory>
     </div>
 </template>
 
@@ -21,6 +23,7 @@
     import user from '../userSkeleton.json';
 
     // eslint-disable-next-line
+    /*
     const dummyUser = {
         "userId": "2876349875623",
         "username": "calvin",
@@ -253,6 +256,7 @@
             '526', "23"]
 
     };
+    */
     export default {
         name: 'app',
         components: {
@@ -267,13 +271,28 @@
                 title: 'Home',
                 user: user,
                 giveCharacter: user.characters[0],
-                giveEquips: user.characters[0].equips
+                giveEquips: user.characters[0].equips,
+                equipType: [],
+                gearType: "0"
             };
         },
         methods: {
             characterChange(event) {
                 this.giveEquips = this.user.characters[event].equips;
                 this.giveCharacter = this.user.characters[event];
+            },
+            getType(event){
+                switch (event[0]) {
+                    case 'card':
+                        this.equipType = this.user.inventory.equips.spellcards;
+                        break;
+                    case 'weapon':
+                        this.equipType = this.user.inventory.equips.weapons;
+                        break;
+                    default :
+                        this.equipType = this.user.inventory.equips.gear;
+                        this.gearType = event[1];
+                }
             }
         }
     }
